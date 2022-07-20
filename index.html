@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="shortcut icon" href="./img/rock-paper-scissors-png-clipart-rock-paper-scissors-11563211310xieroclgnt.png" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Girassol&family=Koulen&family=Playfair+Display:ital,wght@1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <div class="container">
+    <div class="inner__container">
+        <div class="header">
+            <div class="computer_img_div">
+                <img id="computer_img" src="./img/rock_computer.png" alt="computer_img">
+            </div>
+
+            <p class="middle_text">pick one option</p>
+
+            <div class="player_img_div">
+                <img id="player_img" src="./img/rock_player.png" alt="player_img">
+            </div>
+        </div>
+
+        <div class="count">
+            COMPUTER <span class="computer--count">0</span> /
+            <span class="player--count">0</span> PLAYER
+        </div>
+
+        <div class="buttons">
+            <button class="rock">ROCK</button>
+            <button class="paper">PAPER</button>
+            <button class="scissors">SCISSORS</button>
+        </div>
+
+        <div class="reset">
+            <button id="reset_button">RESET</button>
+        </div>
+    </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
