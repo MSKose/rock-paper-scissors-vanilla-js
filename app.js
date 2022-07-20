@@ -5,7 +5,6 @@ const middleText = document.querySelector('.middle_text');
 const computerCount = document.querySelector('.computer--count');
 const playerCount = document.querySelector('.player--count');
 const resetButton = document.getElementById('reset_button');
-console.log(resetButton);
 
 buttons.addEventListener('click', (e) => {
     if (e.target.classList.contains('rock')){
@@ -34,18 +33,13 @@ let computerWins = 0;
 function count (player, computer) {
     if (player === computer) {
         middleText.innerHTML = `It's a tie`
-        console.log('Tie');
     } else if ((player === 'rock' && computer === 'scissors') || (player === 'paper' && computer === 'rock') || (player === 'scissors' && computer === 'paper')) {
-        console.log({playerWins});
         playerWins++;
         playerCount.innerHTML = `${playerWins}`
-        console.log(`You win, computer's choice was ${computer}`);
         middleText.innerHTML = `You win, computer's choice was ${computer}`
     } else  {
-        console.log({computerWins});
         computerWins++;
         computerCount.innerHTML = `${computerWins}`
-        console.log(`You lose, computer's choice was ${computer}`);
         middleText.innerHTML = `You lose, computer's choice was ${computer}`
     } 
     if (playerWins === 5 || computerWins === 5){
