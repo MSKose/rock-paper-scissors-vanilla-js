@@ -7,13 +7,12 @@ This is a rock paper scissors game with vanilla js.
 ## Project Skeleton 
 
 ```
-stone paper scissors (folder)
+rock-paper-scissors-vanilla-js (folder)
 |
-|
-|----img
+|─────img
 |     └─────image files
-|----app.js  
-|----index.html   
-|----style.css
-|----README.md
+|─────app.js  
+|─────index.html   
+|─────style.css
+└─────README.md
 ```
