@@ -1,6 +1,6 @@
-![Animation](./img/rock_paper_scissors.gif)
+![](./img/rock_paper_scissors.gif)
 
-[🎮Click here to play the game](https://yaserdemet.github.io/stone-paper-js/) 
+[🎮Click here to play the game](https://mskose.github.io/rock-paper-scissors-vanilla-js/) 
 ## Description
 This is a rock paper scissors game with vanilla js.
 
