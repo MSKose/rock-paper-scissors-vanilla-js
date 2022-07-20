@@ -4,6 +4,8 @@ const computerImage = document.getElementById('computer_img');
 const middleText = document.querySelector('.middle_text');
 const computerCount = document.querySelector('.computer--count');
 const playerCount = document.querySelector('.player--count');
+const resetButton = document.getElementById('reset_button');
+console.log(resetButton);
 
 buttons.addEventListener('click', (e) => {
     if (e.target.classList.contains('rock')){
@@ -51,10 +53,15 @@ function count (player, computer) {
     }
 }
 
-function winner (x){
-    if (x === 5) {
-        middleText.innerHTML = `You won, congrats`
+function winner (playerWins){
+    if (playerWins === 5) {
+        middleText.innerHTML = `You won, congrats <br> resetting...`
     } else {
-        middleText.innerHTML = `You lost, you'll get it next time`
+        middleText.innerHTML = `You lost, you'll get it next time <br> resetting...`
     }
+    setTimeout(() => window.location.reload(), 2000);
 }
+
+resetButton.addEventListener("click" , () => {
+    window.location.reload();
+})

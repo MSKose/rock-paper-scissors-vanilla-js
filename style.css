@@ -2,11 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* font-family: 'Girassol', cursive; */
     font-family: 'Koulen', cursive;
     font-size: 1.3rem;
-    /* background-color: aqua; */
-    background-color: rgb(27, 27, 27);
+    background-color: rgb(53, 53, 53);
 }
 
 .container {
@@ -34,6 +32,7 @@
 }
 
 .middle_text {
+    text-align: center;
     font-size: smaller;
     color: whitesmoke;
 }
@@ -76,7 +75,7 @@
 
 .buttons button {
     width: 120px;
-    background-color: grey;
+    background-color: rgb(119, 169, 169);
     border: none;
     border-radius: 5px;
 }
